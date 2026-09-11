@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -119,6 +120,7 @@ header {
     font-size: 13px;
     color: #A55AD7;
     padding-top: 100px;
+    letter-spacing: 18%;
 }
 
 .pag2_titulo {
@@ -159,4 +161,148 @@ header {
     font-size: 16px;
     font-weight: 400px;
     padding: 0px 32px 52px;
+}
+
+/* PAGINA 3 */
+
+.pag3 {
+    background-color: #14111C;
+    min-height: 128vh;
+}
+
+.container_gridbox_pag3_rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pag3_novacore {
+    font-size: 13px;
+    color: #A55AD7;
+    padding-top: 100px;
+    letter-spacing: 18%;
+}
+
+.pag3_titulo {
+    padding: 22px 0px 22px 0px;
+    font-size: 38px;
+    color: #F7F4FB;
+}
+
+.container_gridbox_pag3_conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin: 40px auto 0 auto;
+    width: 100%;
+    max-width: 1165px;
+}
+
+.pag3_sobrenos_conteudo {
+    width: 50%;
+}
+
+.pag3_subtitulo_sobrenos {
+    color: #C57AF1;
+    width: 540px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    line-height: 120%;
+}
+
+.pag3_texto_sobrenos {
+    width: 540px;
+    height: 96px;
+    color: #C8BDD4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pag3_imagem {
+    width: 50%;
+}
+
+.pag3_imagem img {
+    width: 570px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+.pag3_nossa_gente {
+    background-color: #211B2D;
+    width: 100%; 
+    max-width: 1165px;
+    margin: 40px auto; 
+    padding: 40px 30px 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.pag3_titulo_gente {
+    color: #C57AF1;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.pag3_texto_gente {
+    color: #C8BDD4;
+    font-size: 14px;
+    margin: 0 0 35px 0;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.pag3_cards {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.pag3_card {
+    width: 270px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.pag3_foto {
+    height: 215px;
+    width: 270px;
+    background-color: #493263;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pag3_circulo {
+    width: 105px;
+    height: 105px;
+    top: 44px;
+    left: 82px;
+    border-radius: 50%;
+    background-color: #C8BDD4;
+    opacity: 38%;
+}
+
+.pag3_nome {
+    background-color: #A55AD7;
+    color: #F7F4FB;
+    padding: 18px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.pag3_nome span {
+    font-size: 12px;
+    color: #F7F4FB;
 }
