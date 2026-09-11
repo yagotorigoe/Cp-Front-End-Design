@@ -11,9 +11,10 @@ body {
 
 .pag1 {
     background-color: #3B2458;
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
+/* CABEÇALHO */
 header {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,6 @@ header {
 .logo {
     display: flex;
     align-items: center;
-
     gap: 12px;
 }
 
@@ -62,6 +62,8 @@ header {
     text-transform: uppercase;
 }
 
+/* CONTEUDO PAGINA 1 */
+
 .container_conteudopag1{
     display: flex;
     align-items: center;
@@ -74,10 +76,83 @@ header {
 .texto1 {
     font-size: 54px;
     color: white;
-
+    justify-content: center;
+    padding: 110px  220px 0px 220px ;
+    text-align: center;
 }
 
 .subtexto1 {
     color: #F7F4FB;
-    font-size: 28px;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+}
+
+.href_queroconhecer {
+    color: white;
+    font-size: 12px;
+    background-color: #A55AD7;
+    padding: 15px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* PAGINA 2 */
+
+.pag2 {
+    background-color: #0B0A12;
+}
+
+.container_gridbox_pag2_rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pag2_nossotrabalho {
+    font-size: 13px;
+    color: #A55AD7;
+    padding-top: 100px;
+}
+
+.pag2_titulo {
+    padding: 22px 0px 22px 0px;
+    font-size: 38px;
+    color: #F7F4FB;
+}
+
+.pag2_subtitulo {
+    color: #C8BDD4;
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.container_gridbox_pag2_conteudo {
+    display: grid;
+    grid-template-columns: 374px 374px 374px;
+    gap: 26px;
+    margin-top: 26px;
+    justify-content: center;
+    padding-bottom: 110px;
+}
+
+.pag2_boxes {
+    background-color: #2E2540;
+    border-radius: 18px;
+}
+
+.pag2_titulo_boxes {
+    color: #F7F4FB;
+    font-size: 17px;
+    font-weight: 600px;
+    padding: 52px 32px 14px;
+}
+
+.pag2_conteudo_boxes {
+    color: #C8BDD4;
+    font-size: 16px;
+    font-weight: 400px;
+    padding: 0px 32px 52px;
 }
