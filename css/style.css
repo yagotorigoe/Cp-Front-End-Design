@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #0B0A12; /* Fundo base escuro */
 }
 
 .pag1 {
@@ -147,6 +148,11 @@ header {
 .pag2_boxes {
     background-color: #2E2540;
     border-radius: 18px;
+    transition: transform 0.3s ease; /* Efeito Hover */
+}
+
+.pag2_boxes:hover {
+    transform: translateY(-8px);
 }
 
 .pag2_titulo_boxes {
@@ -272,6 +278,11 @@ header {
     width: 270px;
     border-radius: 18px;
     overflow: hidden;
+    transition: transform 0.3s ease; /* Efeito Hover */
+}
+
+.pag3_card:hover {
+    transform: translateY(-8px);
 }
 
 .pag3_foto {
@@ -286,8 +297,6 @@ header {
 .pag3_circulo {
     width: 105px;
     height: 105px;
-    top: 44px;
-    left: 82px;
     border-radius: 50%;
     background-color: #C8BDD4;
     opacity: 38%;
@@ -324,11 +333,16 @@ header {
     color:#A55AD7;
     margin-top: 100px;
     margin-bottom: 18px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .pag4_titulo{
     color: white;
-    margin-bottom: 36px;
+    margin-bottom: 50px;
+    font-size: 38px;
 }
 
 .container_pag4{    
@@ -342,7 +356,12 @@ header {
     background-color:#2E2540;
     border-radius: 18px;
     text-align: center;
-    gap: 24px;
+    width: 350px;
+    transition: transform 0.3s ease; /* Efeito Hover */
+}
+
+.container_pag4_boxes:hover {
+    transform: translateY(-8px);
 }
 
 .pag4_box_img{
@@ -355,20 +374,217 @@ header {
     border-radius: 50%;
     width: 54px;
     height: 54px;
-    margin-top: 26px; 
+    margin-top: 36px; 
     opacity: 78%;
 }
 
-.pag4_box_conteudo{}
+.pag4_box_depoimento{
+       padding: 24px 26px 16px 26px;
+       color: #F7F4FB;
+       font-size: 13px;
+       line-height: 150%;
+       font-family: 'Inter', sans-serif;
+}
 
 .pag4_box_conteudo_nome{
     font-size: 13px;
-    color: #F7F4FB;
-    margin-bottom: 52px;
+    color: #C8BDD4;
+    margin-bottom: 40px;
+    font-weight: 400;
 }
 
-.pag4_box_depoimento{
-       padding: 16px 16px;
-       color: #F7F4FB;
-       font-size: 13px;
+/* PAGINA 5 - CONTATO */
+
+.pag5 {
+    background-color: #0B0A12;
+    padding-bottom: 120px;
+}
+
+.pag5_cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pag5_contato {
+    color: #A55AD7;
+    margin-top: 80px;
+    margin-bottom: 18px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.pag5_titulo {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.container_pag5 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pag5_conteudo_img {
+    width: 50%;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #493263 0%, #A55AD7 100%);
+    opacity: 0.85;
+    /* Adicionando um min-height para simular o tamanho da imagem */
+    min-height: 450px; 
+}
+
+.pag5_conteudo_formulario {
+    width: 50%;
+    background-color: #1B1525;
+    border: 1px solid #3B2458;
+    padding: 40px 30px;
+    border-radius: 18px;
+}
+
+.pag5_conteudo_formulario h3 {
+    color: #C57AF1;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.pag5_subtitulo_form {
+    color: #C8BDD4;
+    font-size: 13px;
+    margin-bottom: 26px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pag5_label {
+    color: #F7F4FB;
+    font-size: 12px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.pag5_input, .pag5_textarea {
+    width: 100%;
+    background-color: #0B0A12;
+    border: 1px solid #3B2458;
+    border-radius: 6px;
+    padding: 12px;
+    color: white;
+    margin-bottom: 18px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.pag5_input:focus, .pag5_textarea:focus {
+    border-color: #A55AD7;
+}
+
+.pag5_textarea {
+    resize: none;
+    height: 90px;
+}
+
+.pag5_botao {
+    background-color: #A55AD7;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.pag5_botao:hover {
+    background-color: #C57AF1;
+}
+
+/* FOOTER / RODAPÉ */
+
+.rodape {
+    background-color: #14111C;
+    padding: 60px 0 20px 0;
+    border-top: 1px solid #1B1525;
+}
+
+.rodape_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape_logo_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 60px;
+}
+
+.rodape_logo_texto {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.rodape_links_grid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 0 40px;
+}
+
+.rodape_coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape_coluna h4 {
+    color: #A55AD7;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.rodape_coluna a, 
+.rodape_coluna p {
+    color: #C8BDD4;
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.3s;
+}
+
+.rodape_coluna a:hover {
+    color: white;
+}
+
+.rodape_direitos {
+    border-top: 1px solid #2E2540;
+    width: 100%;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.rodape_direitos p {
+    color: #C8BDD4;
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
 }
